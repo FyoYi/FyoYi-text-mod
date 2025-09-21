@@ -70,13 +70,13 @@ public class ModItems {
                     new Item.Properties().stacksTo(1)
             ));
 
-    public static final RegistryObject<Item> RUBY_INLAID_NETHERITE_SWORD =
-            ITEMS.register("ruby_inlaid_netherite_sword", () -> new SwordItem(
-                    ModTiers.RUBY_NETTHERITE_SWORD,
-                    2,
-                    -2.4F,
-                    new Item.Properties().stacksTo(1)
-            ));
+//    public static final RegistryObject<Item> RUBY_INLAID_NETHERITE_SWORD =
+//            ITEMS.register("ruby_inlaid_netherite_sword", () -> new SwordItem(
+//                    ModTiers.RUBY_NETTHERITE_SWORD,
+//                    2,
+//                    -2.4F,
+//                    new Item.Properties().stacksTo(1)
+//            ));
 
 
     //================================================================
