@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "text_mod:item/text_item"
+    "layer0": "text_mod:item/sundries/text_item"
   }
 }
