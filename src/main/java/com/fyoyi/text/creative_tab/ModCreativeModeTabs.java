@@ -1,7 +1,8 @@
 package com.fyoyi.text.creative_tab;
 
-import com.fyoyi.text.item.ModItems;
-import com.fyoyi.text.item.RubyTools;
+import com.fyoyi.text.item.sundries.Sundries_item;
+import com.fyoyi.text.item.weapon.Sword_item;
+import com.fyoyi.text.item.tools.RubyTools_item;
 import com.fyoyi.text.text_mod;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -17,21 +18,21 @@ public class ModCreativeModeTabs {
 
     public static final RegistryObject<CreativeModeTab> TEXT_TAB =
             CREATIVE_MODE_TABS.register("text_tab", () -> CreativeModeTab.builder()
-                    .icon(() -> new ItemStack(ModItems.RUBY.get()))
+                    .icon(() -> new ItemStack(Sundries_item.RUBY.get()))
                     .title(Component.translatable("ItemGroup.text_tab"))
                     .displayItems((pParameters, pOutput) -> {
-                        pOutput.accept(ModItems.RUBY.get());
-                        pOutput.accept(RubyTools.RUBY_SWORD.get());
-                        pOutput.accept(RubyTools.RUBY_PICKAXE.get());
-                        pOutput.accept(RubyTools.RUBY_AXE.get());
-                        pOutput.accept(RubyTools.RUBY_HOE.get());
-                        pOutput.accept(RubyTools.RUBY_SHOVEL.get());
-                        pOutput.accept(ModItems.RUBY_INLAID_WOODEN_SWORD.get());
-                        pOutput.accept(ModItems.RUBY_INLAID_STONE_SWORD.get());
-                        pOutput.accept(ModItems.RUBY_INLAID_GOLDEN_SWORD.get());
-                        pOutput.accept(ModItems.RUBY_INLAID_IRON_SWORD.get());
-                        pOutput.accept(ModItems.RUBY_INLAID_DIAMOND_SWORD.get());
-                        pOutput.accept(ModItems.RUBY_INLAID_NETHERITE_SWORD.get());
+                        pOutput.accept(Sundries_item.RUBY.get());
+                        pOutput.accept(Sword_item.RUBY_SWORD.get());
+                        pOutput.accept(RubyTools_item.RUBY_PICKAXE.get());
+                        pOutput.accept(RubyTools_item.RUBY_AXE.get());
+                        pOutput.accept(RubyTools_item.RUBY_HOE.get());
+                        pOutput.accept(RubyTools_item.RUBY_SHOVEL.get());
+                        pOutput.accept(Sword_item.RUBY_INLAID_WOODEN_SWORD.get());
+                        pOutput.accept(Sword_item.RUBY_INLAID_STONE_SWORD.get());
+                        pOutput.accept(Sword_item.RUBY_INLAID_GOLDEN_SWORD.get());
+                        pOutput.accept(Sword_item.RUBY_INLAID_IRON_SWORD.get());
+                        pOutput.accept(Sword_item.RUBY_INLAID_DIAMOND_SWORD.get());
+                        pOutput.accept(Sword_item.RUBY_INLAID_NETHERITE_SWORD.get());
 
                     }).build());
 

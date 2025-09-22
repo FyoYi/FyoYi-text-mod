@@ -9,5 +9,8 @@
   "item.text_mod.ruby_inlaid_iron_sword": "镶红宝石铁剑",
   "item.text_mod.ruby_inlaid_diamond_sword": "镶红宝石钻石剑",
   "item.text_mod.ruby_inlaid_netherite_sword": "镶红宝石下届合金剑",
-  "item.text_mod.ruby_pickaxe": "红宝石镐"
+  "item.text_mod.ruby_pickaxe": "红宝石镐",
+  "item.text_mod.ruby_axe": "红宝石斧",
+  "item.text_mod.ruby_hoe": "红宝石锄",
+  "item.text_mod.ruby_shovel": "红宝石铲"
 }
