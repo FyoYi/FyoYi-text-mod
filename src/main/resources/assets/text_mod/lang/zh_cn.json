@@ -2,6 +2,8 @@
   "ItemGroup.text_tab": "测试模组",
   "item.text_mod.text_item": "测试物品",
   "item.text_mod.ruby": "红宝石",
+  "item.text_mod.ruby_grains": "红宝石颗粒",
+  "item.text_mod.ruby_copper": "粗红宝石",
   "item.text_mod.ruby_sword": "红宝石剑",
   "item.text_mod.ruby_inlaid_wooden_sword": "镶红宝石木剑",
   "item.text_mod.ruby_inlaid_golden_sword": "镶红宝石金剑",

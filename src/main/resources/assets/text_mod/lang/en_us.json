@@ -2,6 +2,8 @@
   "ItemGroup.text_tab": "Text Mod Items",
   "item.text_mod.text_item": "Text Item",
   "item.text_mod.ruby": "Ruby",
+  "item.text_mod.ruby_grains": "Ruby Grains",
+  "item.text_mod.ruby_copper": "Ruby Copper",
   "item.text_mod.ruby_sword": "Ruby Sword",
   "item.text_mod.ruby_inlaid_wooden_sword": "Ruby Inlaid Wooden Sword",
   "item.text_mod.ruby_inlaid_golden_sword": "Ruby Inlaid Golden Sword",

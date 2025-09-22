@@ -22,16 +22,18 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("ItemGroup.text_tab"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(Sundries_item.RUBY.get());
+                        pOutput.accept(Sundries_item.RUBY_GRAINS.get());
+                        pOutput.accept(Sundries_item.RUBY_COPPER.get());
                         pOutput.accept(Sword_item.RUBY_SWORD.get());
                         pOutput.accept(RubyTools_item.RUBY_PICKAXE.get());
                         pOutput.accept(RubyTools_item.RUBY_AXE.get());
                         pOutput.accept(RubyTools_item.RUBY_HOE.get());
                         pOutput.accept(RubyTools_item.RUBY_SHOVEL.get());
-                        pOutput.accept(Sword_item.RUBY_INLAID_WOODEN_SWORD.get());
-                        pOutput.accept(Sword_item.RUBY_INLAID_STONE_SWORD.get());
-                        pOutput.accept(Sword_item.RUBY_INLAID_GOLDEN_SWORD.get());
-                        pOutput.accept(Sword_item.RUBY_INLAID_IRON_SWORD.get());
-                        pOutput.accept(Sword_item.RUBY_INLAID_DIAMOND_SWORD.get());
+//                        pOutput.accept(Sword_item.RUBY_INLAID_WOODEN_SWORD.get());
+//                        pOutput.accept(Sword_item.RUBY_INLAID_STONE_SWORD.get());
+//                        pOutput.accept(Sword_item.RUBY_INLAID_GOLDEN_SWORD.get());
+//                        pOutput.accept(Sword_item.RUBY_INLAID_IRON_SWORD.get());
+//                        pOutput.accept(Sword_item.RUBY_INLAID_DIAMOND_SWORD.get());
                         pOutput.accept(Sword_item.RUBY_INLAID_NETHERITE_SWORD.get());
 
                     }).build());
