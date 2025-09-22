@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "text_mod:item/tools/ruby/ruby_shovel"
+  }
+}

@@ -2,6 +2,7 @@ package com.fyoyi.text;
 
 import com.fyoyi.text.creative_tab.ModCreativeModeTabs;
 import com.fyoyi.text.item.ModItems;
+import com.fyoyi.text.item.RubyTools;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.level.block.Blocks;
@@ -36,6 +37,7 @@ public class text_mod
         modEventBus.addListener(this::commonSetup);
 
         //延迟注册器
+        RubyTools.init();
         ModItems.register(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
 

@@ -21,7 +21,7 @@ public class ModTiers {
             new ToolStats(4,2061,9,5.0F,25);
     public static final ToolStats RUBY_NETTHERITE =
             new ToolStats(4,2531,10,6.0F,25);
-
+//===================================================================红宝石类
     public static final ForgeTier RUBY_SWORD =
             new ForgeTier(
                     RUBY.getLEVEL(),
@@ -33,17 +33,50 @@ public class ModTiers {
                     () -> Ingredient.of(ModItems.RUBY.get())
             );
 
-    public static final ForgeTier RUBY_ARMY_SHOVEL =
+    public static final ForgeTier RUBY_PICKAXE =
             new ForgeTier(
                     RUBY.getLEVEL(),
                     RUBY.getUSES(),
                     RUBY.getSPEED(),
                     RUBY.getATTACKDAMAGE(),
                     RUBY.getENCHANTMENTVALUE(),
-                    BlockTags.SWORD_EFFICIENT,
+                    BlockTags.NEEDS_IRON_TOOL,
                     () -> Ingredient.of(ModItems.RUBY.get())
             );
 
+    public static final ForgeTier RUBY_AXE =
+            new ForgeTier(
+                    RUBY.getLEVEL(),
+                    RUBY.getUSES(),
+                    RUBY.getSPEED(),
+                    RUBY.getATTACKDAMAGE(),
+                    RUBY.getENCHANTMENTVALUE(),
+                    BlockTags.MINEABLE_WITH_AXE,
+                    () -> Ingredient.of(ModItems.RUBY.get())
+            );
+
+    public static final ForgeTier RUBY_SHOVEL =
+            new ForgeTier(
+                    RUBY.getLEVEL(),
+                    RUBY.getUSES(),
+                    RUBY.getSPEED(),
+                    RUBY.getATTACKDAMAGE(),
+                    RUBY.getENCHANTMENTVALUE(),
+                    BlockTags.MINEABLE_WITH_SHOVEL,
+                    () -> Ingredient.of(ModItems.RUBY.get())
+            );
+
+    public static final ForgeTier RUBY_HOE =
+            new ForgeTier(
+                    RUBY.getLEVEL(),
+                    RUBY.getUSES(),
+                    RUBY.getSPEED(),
+                    RUBY.getATTACKDAMAGE(),
+                    RUBY.getENCHANTMENTVALUE(),
+                    BlockTags.MINEABLE_WITH_HOE,
+                    () -> Ingredient.of(ModItems.RUBY.get())
+            );
+//====================================================================镶嵌红宝石类
     public static final ForgeTier RUBY_WOODEN_SWORD =
             new ForgeTier(
                     RUBY_WOODEN.getLEVEL(),

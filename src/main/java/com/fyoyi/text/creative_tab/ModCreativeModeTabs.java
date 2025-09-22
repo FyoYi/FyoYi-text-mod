@@ -1,6 +1,7 @@
 package com.fyoyi.text.creative_tab;
 
 import com.fyoyi.text.item.ModItems;
+import com.fyoyi.text.item.RubyTools;
 import com.fyoyi.text.text_mod;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -20,13 +21,18 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("ItemGroup.text_tab"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.RUBY.get());
-                        pOutput.accept(ModItems.RUBY_SWORD.get());
+                        pOutput.accept(RubyTools.RUBY_SWORD.get());
+                        pOutput.accept(RubyTools.RUBY_PICKAXE.get());
+                        pOutput.accept(RubyTools.RUBY_AXE.get());
+                        pOutput.accept(RubyTools.RUBY_HOE.get());
+                        pOutput.accept(RubyTools.RUBY_SHOVEL.get());
                         pOutput.accept(ModItems.RUBY_INLAID_WOODEN_SWORD.get());
                         pOutput.accept(ModItems.RUBY_INLAID_STONE_SWORD.get());
                         pOutput.accept(ModItems.RUBY_INLAID_GOLDEN_SWORD.get());
                         pOutput.accept(ModItems.RUBY_INLAID_IRON_SWORD.get());
                         pOutput.accept(ModItems.RUBY_INLAID_DIAMOND_SWORD.get());
                         pOutput.accept(ModItems.RUBY_INLAID_NETHERITE_SWORD.get());
+
                     }).build());
 
 //    public static final RegistryObject<CreativeModeTab> TEXT_TAB =
