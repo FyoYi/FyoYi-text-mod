@@ -1,6 +1,6 @@
 package com.fyoyi.text.item;
 
-import com.fyoyi.text.item.weapon.Bow_item;
+import com.fyoyi.text.item.weapon.bow.Bow_item;
 import com.fyoyi.text.item.weapon.CrossBow_item;
 import com.fyoyi.text.item.weapon.Spear_item;
 import com.fyoyi.text.item.weapon.Sword_item;

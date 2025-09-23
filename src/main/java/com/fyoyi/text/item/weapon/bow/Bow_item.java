@@ -1,4 +1,4 @@
-package com.fyoyi.text.item.weapon;
+package com.fyoyi.text.item.weapon.bow;
 
 public class Bow_item {
 
