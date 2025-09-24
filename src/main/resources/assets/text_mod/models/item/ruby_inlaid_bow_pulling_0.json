@@ -1,0 +1,6 @@
+{
+  "parent": "text_mod:item/ruby_inlaid_bow",
+  "textures": {
+    "layer0": "text_mod:item/weapon/bow/ruby_inlaid_bow_pulling_0"
+  }
+}
