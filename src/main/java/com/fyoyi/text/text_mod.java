@@ -2,8 +2,12 @@ package com.fyoyi.text;
 
 import com.fyoyi.text.creative_tab.ModCreativeModeTabs;
 import com.fyoyi.text.item.ModItems;
+import net.minecraft.world.item.Item;
+import net.minecraft.resources.ResourceLocation;
+import com.fyoyi.text.item.weapon.bow.Bow_item;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -39,6 +43,7 @@ public class text_mod
         ModItems.init();
         ModItems.register(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
+
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
@@ -89,6 +94,28 @@ public class text_mod
             // Some client setup code
             LOGGER.info("HELLO FROM CLIENT SETUP");
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+
+            event.enqueueWork(() -> {
+                // 假设你的弓在 ModItems 类中注册的变量名是 RUBY_INLAID_BOW
+                // 确保导入 net.minecraft.world.item.Item 和 com.fyoyi.text.item.ModItems
+                Item rubyInlaidBow = Bow_item.RUBY_INLAID_BOW.get();
+
+                // 1. 注册 "pull" 属性 (拉弓进度)
+                ItemProperties.register(rubyInlaidBow, ResourceLocation.fromNamespaceAndPath("minecraft", "pull"), (stack, world, entity, seed) -> {
+                    if (entity == null) {
+                        return 0.0F;
+                    } else {
+                        return entity.getUseItem() != stack ? 0.0F : (float)(stack.getUseDuration() - entity.getUseItemRemainingTicks()) / 20.0F;
+                    }
+                });
+
+                // 2. 注册 "pulling" 属性 (是否正在拉弓)
+                ItemProperties.register(rubyInlaidBow, ResourceLocation.fromNamespaceAndPath("minecraft", "pulling"), (stack, world, entity, seed) -> {
+                    return entity != null && entity.isUsingItem() && entity.getUseItem() == stack ? 1.0F : 0.0F;
+                });
+
+                LOGGER.info("Registered Item Properties for custom bows.");
+            });
         }
     }
 }
