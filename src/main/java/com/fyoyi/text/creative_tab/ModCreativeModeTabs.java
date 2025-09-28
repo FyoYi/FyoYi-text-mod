@@ -4,6 +4,7 @@ import com.fyoyi.text.item.sundries.Sundries_item;
 import com.fyoyi.text.item.weapon.Sword_item;
 import com.fyoyi.text.item.tools.RubyTools_item;
 import com.fyoyi.text.item.weapon.bow.Bow_item;
+import com.fyoyi.text.recipe.ModRecipes;
 import com.fyoyi.text.text_mod;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -37,7 +38,7 @@ public class ModCreativeModeTabs {
 //                        pOutput.accept(Sword_item.RUBY_INLAID_DIAMOND_SWORD.get());
                         pOutput.accept(Sword_item.RUBY_INLAID_NETHERITE_SWORD.get());
                         pOutput.accept(Bow_item.RUBY_INLAID_BOW.get());
-
+                        //pOutput.accept(Sword_item.FIREWORK_ARROW.get());
                     }).build());
 
 //    public static final RegistryObject<CreativeModeTab> TEXT_TAB =

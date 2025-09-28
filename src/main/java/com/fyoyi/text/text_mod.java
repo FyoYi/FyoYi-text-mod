@@ -21,6 +21,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.ForgeRegistries;
+import com.fyoyi.text.recipe.ModRecipes;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -42,6 +43,7 @@ public class text_mod
         //延迟注册器
         ModItems.init();
         ModItems.register(modEventBus);
+        ModRecipes.register(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
 
 

@@ -22,6 +22,14 @@ public class Sundries_item {
             ModItems.ITEMS.register("ruby_copper", () -> new Item(new Item.Properties().
                     stacksTo(64)));
 
+    public static final RegistryObject<Item> FIREWORK_ARROW =
+            ModItems.ITEMS.register("firework_arrow",
+                    () -> new FireworkArrowItem(new Item.Properties().stacksTo(64)));
+
+//    public static final RegistryObject<Item> FIREWORK_ARROW =
+//            ModItems.ITEMS.register("firework_arrow", () -> new Item(new Item.Properties().
+//                    stacksTo(64)));
+
     public static void init() {
         // 这个方法是空的，它的存在就是为了让主类可以调用它来加载这个类
     }
